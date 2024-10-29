@@ -3,127 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jana Abdelkader's Poetry Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #fefefe;
-            color: #333;
-            margin: 0;
-        }
-        header {
-            background-color: #6d6875;
-            color: #fff;
-            padding: 1rem;
-            text-align: center;
-        }
-        .container {
-            padding: 20px;
-            max-width: 800px;
-            margin: auto;
-        }
-        h2 {
-            color: #6d6875;
-        }
-        .section {
-            margin-bottom: 2rem;
-        }
-        .section p {
-            line-height: 1.6;
-        }
-        footer {
-            background-color: #6d6875;
-            color: #fff;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-        .poems, .recordings {
-            display: flex;
-            flex-direction: column;
-            gap: 1.5rem;
-        }
-        .poem, .recording {
-            background-color: #fff;
-            padding: 15px;
-            border: 1px solid #ddd;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        .poem-title, .recording-title {
-            font-weight: bold;
-            font-size: 1.2rem;
-            color: #333;
-        }
-        .poem-text {
-            font-style: italic;
-            color: #555;
-        }
-        audio {
-            width: 100%;
-            margin-top: 0.5rem;
-        }
-    </style>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-
-    <header>
-        <h1>Jana Abdelkader's Poetry Portfolio</h1>
-        <p>Poet | Storyteller | Voice of Emotions</p>
+    <header class="header">
+        <a href="#" class="logo"><span>Jana</span> Abd-Elkader</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#alhamadany">Abou-Feras Al-Hamadany</a>
+            <a href="#gharabawy">Mohamed Al-Gharabawy</a>
+            <a href="#barghothy">Tamim Al-Barghothy</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
 
-    <div class="container">
-        <section class="section about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Jana Abdelkader, a poet passionate about capturing emotions, life’s complexities, and unique perspectives. My poetry reflects my personal journey, and through each recitation, I hope to evoke emotions and inspire reflection.</p>
-        </section>
-
-        <section class="section poems">
-            <h2>Featured Poems</h2>
-            <div class="poem">
-                <div class="poem-title">"Whispers of the Heart"</div>
-                <p class="poem-text">In the silence of midnight, I hear whispers, <br> Carried by the gentle breeze, a heart’s secrets unfold...</p>
-            </div>
-            <div class="poem">
-                <div class="poem-title">"Echoes of Time"</div>
-                <p class="poem-text">Through fleeting moments and fading days, <br> Memories linger like echoes in the heart...</p>
-            </div>
-        </section>
-
-        <section class="section recordings">
-            <h2>Audio Recitations</h2>
-            <div class="recording">
-                <div class="recording-title">"Whispers of the Heart" (Audio)</div>
-                <audio controls>
-                    <source src="path/to/whispers-of-the-heart.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="recording">
-                <div class="recording-title">"Echoes of Time" (Audio)</div>
-                <audio controls>
-                    <source src="path/to/echoes-of-time.mp3" type="audio/mpeg">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-        </section>
-
-        <section class="section inspiration">
-            <h2>My Inspiration</h2>
-            <p>Every poem I write and recite is a piece of my soul, inspired by moments of joy, reflection, and heartache. Poetry, to me, is a journey of self-discovery, and I draw inspiration from nature, relationships, and the shared human experience.</p>
-        </section>
-
-        <section class="section contact">
-            <h2>Contact</h2>
-            <p>Email: jana@example.com</p>
-            <p>Follow me on Instagram: <a href="https://www.instagram.com/jana_poetry" target="_blank">@jana_poetry</a></p>
-        </section>
+    <section id="home" class="home">
+        <div class="imgbox">
+            <img src="Jana Abdelkader.jpeg" alt="Profile Picture">
+        </div>
+        <div class="home-content">
+            <h1><span>P</span>oetry <span>P</span>ortfolio<br>Explore the world through verses</h1>
+        </div>
+    </section>
+    
+    <div class="about">
+        <div class="about-content">
+            <h3>About Me</h3>
+            <p>I'm Jana Abd-Elkader, a girl with a unique outlook on the world, experiencing it with vibrant and distinct vibes. Though my perspective may not resonate with everyone, it often inspires admiration, leaving many to exclaim, "WOW". I enjoy reciting poetry, bringing the words of others to life with my voice. Every piece in this portfolio is a reflection of my passion for poetry.</p>
+        </div>
+        <div class="about-img">
+            <img src="About.jpeg" alt="About Me">
+        </div>
     </div>
+    
+    <!-- Abou-Feras Al-Hamadany Section -->
+    <section id="alhamadany" class="section abou-feras">
+        <div class="content">
+            <div class="section-img-container">
+                <img src="Abou feras.jpeg" alt="Abou-Feras Al-Hamadany" class="section-img">
+            </div>
+            <div class="section-description">
+                <h3>Abou-Feras Al-Hamadany</h3>
+                <p>The provided lines express profound longing and melancholy, contrasting the sweetness of love with the bitterness of life. The speaker wishes for the beloved's approval and a flourishing connection between them, feeling isolated from the world. Love is depicted as transformative, making all struggles seem insignificant. The poet uses vivid imagery and metaphors, comparing love to pure water and emphasizing the unattainability of desires through the imagery of a mirage. Overall, the verses reflect a deep emotional yearning for connection, highlighting the complexities and challenges of love.</p>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2024 Jana Abdelkader</p>
-    </footer>
+    <!-- Gharabawy Section -->
+    <section id="gharabawy" class="section gharabawy">
+        <div class="content">
+            <div class="section-img-container">
+                <img src="Ghrabawy.jpeg" alt="Gharabawy" class="section-img">
+            </div>
+            <div class="section-description">
+                <h3>Mohamed Al-Gharabawy: سائلوا بارليف</h3>
+                <p>The provided lines celebrate the resilience and strength of the people of Sinai in the face of oppression. The speaker reflects on the powerful echo of their cries, emphasizing the suffering endured under tyranny. The moment when they proclaim "God is the Greatest" is pivotal, shaking the foundations of falsehood and instilling fear in the oppressors. The lines convey a sense of victory as the stronghold of the oppressors collapses, ending the myth of their invincibility. Ultimately, the poem highlights the triumph of justice over tyranny, illustrating the indomitable spirit of those who resist and fight for their freedom.</p>
+            </div>
+        </div>
+    </section>
 
+    <!-- El Barghothy Section -->
+    <section id="barghothy" class="section el-barghothy">
+        <div class="content">
+            <div class="section-img-container">
+                <img src="barghothy.jpeg" alt="El Barghothy" class="section-img">
+            </div>
+            <div class="section-description">
+                <h3>Tamim El-Barghothy: في القدس</h3>
+                <p>The lines express the profound and miraculous nature of Jerusalem, where contradictions coexist and wonders are undeniable. The imagery of flipping through pieces of fabric symbolizes the city's rich history, blending the old with the new. The miracles in Jerusalem are tangible and can be felt through personal interactions, whether greeting an elder or touching a building. The poet suggests that these experiences leave an indelible mark, like an inscription of a poem on one's hands, connecting the visitor to the heritage and honor of the city. Overall, the verses celebrate the deep historical and spiritual significance of Jerusalem, inviting a sense of reverence and connection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out to me through the following channels:</p>
+        <ul class="contact-list">
+            <li><a href="mailto:janaa.abdelkaderr@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+            <li><a href="tel:+201554096637"><i class="fas fa-phone-alt"></i> Phone</a></li>
+            <li><a href="https://www.linkedin.com/in/jana-abd-elkader-7456202a0" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/yourprofile" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+        </ul>
+    </section>
 </body>
 </html>
